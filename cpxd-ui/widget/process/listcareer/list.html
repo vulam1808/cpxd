@@ -1,0 +1,28 @@
+#theme("/common/css/grid.min")
+
+#script("/js/common/inet/lib/grid-2.0.min.js")
+
+#script("/js/cpkd/inet/lib/listcareer-list.min.js")
+<!--#xscript()
+    $(function(){
+        var wgProvince = new iNet.ui.ita.ProvinceListWidget();
+        wgProvince.show();
+    });
+
+#end-->
+<div id="listcareer-widget-content" >
+<div id="listcareer-widget" style="display: none;">
+
+    <div class="row" style="">
+        <div class="alert alert-info col-xs-12 col-sm-12" style="padding: 5px;">
+            <strong><i class="icon-info-sign"></i> $text.getText("common.listCareer")</strong>
+        </div>
+    </div>
+    <div class="row">
+        <button id="button-listcareer" class="btn btn-primary btn-small">
+            <i class="icon-plus"></i> Add
+        </button>
+        <div id="listcareer-grid"></div>
+    </div>
+</div>
+</div>
