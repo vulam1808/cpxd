@@ -79,8 +79,8 @@ $(function() {
                     labelCls: 'label label-info',
                     fn : function(record) {
                         console.log("record >>>>",record);
-                       // var __url = iNet.$ctx.page('cpkd/page/process/homeBusinessProcess');
-                        var __url = iNet.getUrl('cpkd/page/index')+'#menu-process-homebusines';//?taskID='+record.taskID+'&act='+me.act;
+                       // var __url = iNet.$ctx.page('cpxd/page/process/homeBusinessProcess');
+                        var __url = iNet.getUrl('cpxd/page/index')+'#menu-process-homebusines';//?taskID='+record.taskID+'&act='+me.act;
                         iNet.getLayout().parentParams={taskID: record.taskID, act: me.act};
                         iNet.getLayout().window.location.href = __url;
 

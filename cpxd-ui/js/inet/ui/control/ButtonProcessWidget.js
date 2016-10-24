@@ -41,7 +41,7 @@ $(function () {
 
         var buttonBack = function(){
             console.log("Show ACT>>>", me.act);
-            var __url = iNet.getUrl('cpkd/page/index')+'#menu-process-business';
+            var __url = iNet.getUrl('cpxd/page/index')+'#menu-process-business';
             iNet.getLayout().window.location.href = __url;
             iNet.getLayout().parentParams={act: me.act};
         };

@@ -8,17 +8,17 @@ iNet.taskID = $ctx.value('taskID');
 #end
 -->
 
-#widget("/cpkd/widget/common/common")
-#script("/js/cpkd/inet/lib/homebusiness-process.min.js")
-#widget("/cpkd/widget/control/ajaxmask")
-#widget("/cpkd/widget/process/listcareer/form-dialog")
-#script("/js/cpkd/inet/lib/listcareer-form-dialog.min.js")
-#widget("/cpkd/widget/control/viewInfoDetail")
-#widget("/cpkd/widget/control/infoBusiness")
+#widget("/cpxd/widget/common/common")
+#script("/js/cpxd/inet/lib/homebusiness-process.min.js")
+#widget("/cpxd/widget/control/ajaxmask")
+#widget("/cpxd/widget/process/listcareer/form-dialog")
+#script("/js/cpxd/inet/lib/listcareer-form-dialog.min.js")
+#widget("/cpxd/widget/control/viewInfoDetail")
+#widget("/cpxd/widget/control/infoBusiness")
 <div id="business-process-div">
     <div>
         <div id="business-process-toolbar" class="wg-toolbar navbar-fixed-top">
-            #widget("/cpkd/widget/control/buttonProcess")
+            #widget("/cpxd/widget/control/buttonProcess")
         </div>
         <div class="wg-content">
             <div id="business-process-subject-details">
@@ -35,7 +35,7 @@ iNet.taskID = $ctx.value('taskID');
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane active container-fluid" id="tab-business-infoTask">
-                            #widget("/cpkd/widget/process/homeBusiness/viewtask")
+                            #widget("/cpxd/widget/process/homeBusiness/viewtask")
                         </div>
                         <div class="tab-pane container-fluid" id="tab-business-infoProcess">
                             <div id="tab-button-proess" class="row" >
@@ -47,20 +47,20 @@ iNet.taskID = $ctx.value('taskID');
                                 </button>
                             </div>
                             <div id="tab-infoProcess-nameChange">
-                                #widget("/cpkd/widget/control/nameProcess")
+                                #widget("/cpxd/widget/control/nameProcess")
                             </div>
                             <div id="tab-infoProcess-person">
-                                #widget("/cpkd/widget/process/person/form")
+                                #widget("/cpxd/widget/process/person/form")
                             </div>
                             <div id="tab-infoProcess-capital">
-                                #widget("/cpkd/widget/process/capital/form")
+                                #widget("/cpxd/widget/process/capital/form")
 
                             </div>
                             <div id="tab-infoProcess-career">
-                                #widget("/cpkd/widget/process/listcareer/list")
+                                #widget("/cpxd/widget/process/listcareer/list")
                             </div>
                             <div id="tab-infoProcess-listcontributor">
-                                #widget("/cpkd/widget/process/listcontributor/list")
+                                #widget("/cpxd/widget/process/listcontributor/list")
                             </div>
                         </div>
                     </div>

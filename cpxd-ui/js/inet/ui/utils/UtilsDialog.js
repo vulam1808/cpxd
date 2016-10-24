@@ -1,4 +1,4 @@
-// #PACKAGE:cpkd-dialog
+// #PACKAGE:cpxd-dialog
 // #MODULE: UtilsDialog
 $(function () {
   iNet.ns("iNet.ui", "iNet.ui.ita");
