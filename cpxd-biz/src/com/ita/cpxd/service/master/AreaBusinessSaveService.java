@@ -21,10 +21,10 @@ import com.ita.cpxd.model.AreaBusiness;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_areabusiness_saveservice")
+@Named("ita_areabusiness_saveservice")
 
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/areabusiness/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/areabusiness/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class AreaBusinessSaveService extends DataServiceMarker{
 
     @Inject

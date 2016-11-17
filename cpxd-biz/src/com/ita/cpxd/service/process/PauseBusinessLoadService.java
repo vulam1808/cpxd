@@ -22,9 +22,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_pausebusiness_loadservice")
+@Named("ita_pausebusiness_loadservice")
 @XPortalDataService(roles = {"cpxd.create"}, description = "Tạo hồ sơ")
-@XPortalPageRequest(uri = "cpxd/pausebusiness/load",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/pausebusiness/load",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class PauseBusinessLoadService extends DataServiceMarker {
     @Inject

@@ -8,8 +8,14 @@ import com.inet.xportal.web.exception.WebOSBOException;
 import com.inet.xportal.web.interfaces.DataServiceMarker;
 import com.inet.xportal.web.interfaces.ObjectWebDataservice;
 import com.inet.xportal.web.interfaces.WebDataService;
+import com.ita.cpxd.bo.ChangeBusinessBo;
 import com.ita.cpxd.bo.EndBusinessBo;
+import com.ita.cpxd.bo.HomeBusinessBo;
+import com.ita.cpxd.bo.PersonRepresentBo;
+import com.ita.cpxd.model.ChangeBusiness;
 import com.ita.cpxd.model.EndBusiness;
+import com.ita.cpxd.model.HomeBusiness;
+import com.ita.cpxd.model.PersonRepresent;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -19,9 +25,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_endbusiness_saveservice")
+@Named("ita_endbusiness_saveservice")
 @XPortalDataService(roles = {"cpxd.create"}, description = "Tạo hồ sơ")
-@XPortalPageRequest(uri = "cpxd/endbusiness/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/endbusiness/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class EndBusinessNewService extends DataServiceMarker {
     @Inject
     private EndBusinessBo endBusinessBo;

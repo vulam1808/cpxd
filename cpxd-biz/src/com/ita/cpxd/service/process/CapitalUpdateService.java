@@ -11,9 +11,11 @@ import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
 import com.ita.cpxd.bo.ChangeBusinessBo;
 import com.ita.cpxd.bo.HomeBusinessBo;
+import com.ita.cpxd.bo.PersonRepresentBo;
 import com.ita.cpxd.enums.EnumStatus;
 import com.ita.cpxd.model.ChangeBusiness;
 import com.ita.cpxd.model.HomeBusiness;
+import com.ita.cpxd.model.PersonRepresent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,9 +27,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_capital_updateservice")
+@Named("ita_capital_updateservice")
 @XPortalDataService(roles = {"cpxd.process"}, description = "Xử lý hồ sơ")
-@XPortalPageRequest(uri = "cpxd/capital/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/capital/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class CapitalUpdateService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(EnumStatusLoadService.class);
     @Inject

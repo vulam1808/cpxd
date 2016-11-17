@@ -6,7 +6,7 @@ import com.inet.xportal.web.annotation.XPortalModel;
 /**
  * Created by HS on 13/09/2016.
  */
-@XPortalModel(name = "cpxd_listcareer", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalModel(name = "ita-listcareer", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class ListCareer {
     private String uuid;
     private String career_id;

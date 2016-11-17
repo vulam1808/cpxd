@@ -1,8 +1,12 @@
 package com.ita.cpxd.model;
 
-import javax.inject.Named;
+import com.inet.xportal.web.WebConstant;
+import com.inet.xportal.web.annotation.XPortalModel;
 
-@Named("Career1")
+/**
+ * Created by HS on 13/09/2016.
+ */
+@XPortalModel(name = "ita-career", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class Career {
     private String uuid;
     private String code;

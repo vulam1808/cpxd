@@ -2,6 +2,9 @@
 package com.ita.cpxd.service.process;
 
 
+import javax.inject.Inject;
+
+
 import javax.inject.Named;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +19,8 @@ import com.inet.xportal.web.interfaces.ObjectWebDataservice;
 import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
 
+import com.ita.cpxd.bo.AreaBusinessBo;
+import com.ita.cpxd.bo.HomeBusinessBo;
 import com.ita.cpxd.enums.EnumChangeInfo;
 import com.ita.cpxd.enums.EnumStatus;
 import org.slf4j.Logger;
@@ -25,10 +30,10 @@ import org.slf4j.LoggerFactory;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_enums_loadservice")
+@Named("ita_enums_loadservice")
 
 @XPortalDataService(roles = {"cpxd.view"}, description = "Xem hồ sơ")
-@XPortalPageRequest(uri = "cpxd/enums/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/enums/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class EnumStatusLoadService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(EnumStatusLoadService.class);

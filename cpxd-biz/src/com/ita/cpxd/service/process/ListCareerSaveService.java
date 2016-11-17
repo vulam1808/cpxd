@@ -40,10 +40,10 @@ import java.util.Map;
  *
  * @since 1.0
  */
-@Named("cpxd_listcareer_saveservice")
+@Named("ita_listcareer_saveservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
 
-@XPortalPageRequest(uri = "cpxd/listcareer/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/listcareer/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class ListCareerSaveService extends DataServiceMarker {
     @Inject

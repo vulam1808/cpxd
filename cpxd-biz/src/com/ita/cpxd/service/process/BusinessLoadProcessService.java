@@ -1,5 +1,6 @@
 package com.ita.cpxd.service.process;
 
+import com.inet.xportal.nosql.web.data.SearchDTO;
 import com.inet.xportal.web.WebConstant;
 import com.inet.xportal.web.action.AbstractBaseAction;
 import com.inet.xportal.web.annotation.XPortalDataService;
@@ -10,7 +11,14 @@ import com.inet.xportal.web.interfaces.ObjectWebDataservice;
 import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
 import com.ita.cpxd.bo.BusinessDetailBo;
+import com.ita.cpxd.bo.ChangeBusinessBo;
 import com.ita.cpxd.bo.HomeBusinessBo;
+import com.ita.cpxd.bo.PersonRepresentBo;
+import com.ita.cpxd.enums.EnumStatus;
+import com.ita.cpxd.model.BusinessDetail;
+import com.ita.cpxd.model.ChangeBusiness;
+import com.ita.cpxd.model.HomeBusiness;
+import com.ita.cpxd.model.PersonRepresent;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,9 +31,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_business_loadprocessservice")
+@Named("ita_business_loadprocessservice")
 @XPortalDataService(roles = {"cpxd.process"}, description = "Xử lý hồ sơ")
-@XPortalPageRequest(uri = "cpxd/homebusiness/loadprocess", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/homebusiness/loadprocess", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class BusinessLoadProcessService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(BusinessLoadProcessService.class);
     @Inject

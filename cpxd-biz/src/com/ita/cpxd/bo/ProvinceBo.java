@@ -12,7 +12,7 @@ import com.ita.cpxd.model.Province;
 /**
  * Created by LamLe on 9/7/2016.
  */
-@Named("cpxd_ProvinceBo")
+@Named("cpxdProvinceBo")
 public class ProvinceBo extends MagicContentBO<Province> {
 
     /**
@@ -21,7 +21,7 @@ public class ProvinceBo extends MagicContentBO<Province> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected ProvinceBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected ProvinceBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "province");
     }
 

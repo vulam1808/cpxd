@@ -19,9 +19,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_career_deleteservice")
+@Named("ita_career_deleteservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Muc")
-@XPortalPageRequest(uri = "cpxd/career/delete", model = "Career", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/career/delete", model = "com.ita.cpxd.model.Career", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class CareerDeleteService extends DataServiceMarker {
     @Inject
     private CareerBo careerBo;

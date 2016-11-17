@@ -12,7 +12,7 @@ import javax.inject.Named;
 /**
  * Created by ACER on 9/7/2016.
  */
-@Named("cpxd_WardBo")
+@Named("cpxdWardBo")
 public class WardBo extends MagicContentBO<Ward> {
 
     /**
@@ -21,7 +21,7 @@ public class WardBo extends MagicContentBO<Ward> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected WardBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected WardBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "ward");
     }
 

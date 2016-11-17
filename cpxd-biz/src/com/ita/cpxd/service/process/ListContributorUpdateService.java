@@ -39,10 +39,10 @@ import java.util.Map;
  *
  * @since 1.0
  */
-@Named("cpxd_listcontributor_updateservice")
+@Named("ita_listcontributor_updateservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
 
-@XPortalPageRequest(uri = "cpxd/listcontributor/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/listcontributor/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class ListContributorUpdateService extends DataServiceMarker {
     @Inject

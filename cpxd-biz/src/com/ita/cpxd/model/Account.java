@@ -27,7 +27,7 @@ import com.inet.xportal.web.annotation.XPortalModel;
  *
  * @since 1.0
  */
-@XPortalModel(name = "ita-cpxd-account", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalModel(name = "ita-account", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class Account {
   private String uuid;
   private String name;

@@ -13,6 +13,8 @@ import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
 import com.ita.cpxd.bo.BusinessDetailBo;
 import com.ita.cpxd.enums.EnumProcess;
+import com.ita.cpxd.model.BusinessDetail;
+import com.ita.cpxd.model.Details;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,9 +29,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_listbusinessdetail_loadservice")
+@Named("ita_listbusinessdetail_loadservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/listbusinessdetail/load",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/listbusinessdetail/load",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class ListBusinessDetailLoadService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(ListBusinessDetailLoadService.class);

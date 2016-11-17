@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * Created by LamLe on 9/7/2016.
  */
-@Named("cpxd_ListContributorBo")
+@Named("cpxdListContributorBo")
 public class ListContributorBo extends MagicContentBO<ListContributor> {
 
     /**
@@ -28,7 +28,7 @@ public class ListContributorBo extends MagicContentBO<ListContributor> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected ListContributorBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected ListContributorBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "listcontributor");
     }
     public List<ListContributor> loadListContributorByHomeBusinessID(String homeBusinessID) throws WebOSBOException

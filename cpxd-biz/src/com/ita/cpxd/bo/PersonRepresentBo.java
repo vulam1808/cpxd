@@ -5,6 +5,7 @@ import com.inet.xportal.nosql.web.bo.MagicContentBO;
 import com.inet.xportal.web.context.ContentContext;
 import com.inet.xportal.web.context.WebContext;
 import com.inet.xportal.web.exception.WebOSBOException;
+import com.ita.cpxd.enums.EnumStatus;
 import com.ita.cpxd.model.ChangeBusiness;
 import com.ita.cpxd.model.HomeBusiness;
 import com.ita.cpxd.model.PersonRepresent;
@@ -16,7 +17,7 @@ import javax.inject.Named;
 /**
  * Created by HS on 14/9/2016.
  */
-@Named("cpxd_PersonRepresentBo")
+@Named("cpxdPersonRepresentBo")
 public class PersonRepresentBo extends MagicContentBO<PersonRepresent> {
 
 
@@ -26,7 +27,7 @@ public class PersonRepresentBo extends MagicContentBO<PersonRepresent> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected PersonRepresentBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected PersonRepresentBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "personrepresent");
     }
     public PersonRepresent loadPersonRepresentByID(String id) throws WebOSBOException

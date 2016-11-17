@@ -40,9 +40,9 @@ import com.ita.cpxd.bo.ProvinceBo;
  *
  * @since 1.0
  */
-@Named("cpxd_province_deleteservice")
+@Named("ita_province_deleteservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/province/delete",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/province/delete",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class ProvinceDeleteService extends DataServiceMarker {
     @Inject
     private ProvinceBo provinceBo;

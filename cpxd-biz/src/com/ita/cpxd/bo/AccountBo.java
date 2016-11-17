@@ -31,7 +31,7 @@ import com.inet.xportal.web.context.ContentContext;
  *
  * @since 1.0
  */
-@Named("cpxd_AccountBo")
+@Named("cpxdAccountBo")
 public class AccountBo extends MagicContentBO<Account> {
 
   /**
@@ -40,7 +40,7 @@ public class AccountBo extends MagicContentBO<Account> {
    * @param contentBf the given {@link MagicContentBF}
    */
   @Inject
-  protected AccountBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+  protected AccountBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
     super(contentBf, "account");
   }
 

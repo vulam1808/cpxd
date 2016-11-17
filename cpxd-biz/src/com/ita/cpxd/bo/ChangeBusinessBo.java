@@ -12,7 +12,10 @@ import com.inet.xportal.web.exception.WebOSBOException;
 import com.inet.xportal.xdb.persistence.JSONDB;
 import com.inet.xportal.xdb.query.Query;
 import com.inet.xportal.xdb.query.impl.QueryImpl;
+import com.ita.cpxd.enums.EnumChangeInfo;
+import com.ita.cpxd.enums.EnumProcess;
 import com.ita.cpxd.model.ChangeBusiness;
+import com.ita.cpxd.model.HomeBusiness;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +24,7 @@ import java.util.List;
 /**
  * Created by LamLe on 9/7/2016.
  */
-@Named("cpxd_ChangeBusinessBo")
+@Named("cpxdChangeBusinessBo")
 public class ChangeBusinessBo extends MagicContentBO<ChangeBusiness> {
 
     /**
@@ -30,7 +33,7 @@ public class ChangeBusinessBo extends MagicContentBO<ChangeBusiness> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected ChangeBusinessBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected ChangeBusinessBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "changeBusiness");
     }
     public ChangeBusiness updateName(String name, String id) throws WebOSBOException

@@ -39,10 +39,10 @@ import java.util.Map;
  *
  * @since 1.0
  */
-@Named("cpxd_listcontributor_deleteservice")
+@Named("ita_listcontributor_deleteservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
 
-@XPortalPageRequest(uri = "cpxd/listcontributor/delete", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/listcontributor/delete", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class ListContributorDeleteService extends DataServiceMarker {
     @Inject

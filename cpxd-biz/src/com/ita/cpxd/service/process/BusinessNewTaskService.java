@@ -10,10 +10,8 @@ import com.inet.xportal.web.interfaces.ObjectWebDataservice;
 import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
 import com.ita.cpxd.bo.*;
-import com.ita.cpxd.bo.*;
 import com.ita.cpxd.enums.EnumProcess;
 import com.ita.cpxd.enums.EnumStatus;
-import com.ita.cpxd.model.*;
 import com.ita.cpxd.model.*;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
@@ -27,9 +25,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_business_newtaskservice")
+@Named("ita_business_newtaskservice")
 @XPortalDataService(roles = {"cpxd.create"}, description = "Tạo hồ sơ")
-@XPortalPageRequest(uri = "cpxd/business/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/business/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class BusinessNewTaskService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(EnumStatusLoadService.class);
     @Inject
@@ -57,6 +55,7 @@ public class BusinessNewTaskService extends DataServiceMarker {
             arbmodel.setTaskID(taskID);
             arbmodel.setStatusType(statusType);
             arbmodel.setStatusProcess(EnumProcess.PROCESS.toString());
+            arbmodel.setDateSubmit(Long.toString(System.currentTimeMillis()));
             //arbmodel.setDateSubmit(Date);
             arbmodel = homeBusinessBo.addHomeBusiness(arbmodel);
             if(taskID == null || taskID.equals(""))
@@ -81,6 +80,7 @@ public class BusinessNewTaskService extends DataServiceMarker {
             objmodel.setTaskID(taskID);
             objmodel.setHomeBusiness_ID(homebusinessID);
             objmodel.setStatusProcess(EnumProcess.PROCESS.toString());
+            objmodel.setDateSubmit(Long.toString(System.currentTimeMillis()));
             ChangeBusiness objchange = changeBusinessBo.addChangeBusiness(objmodel,strInfoChange);
 
 
@@ -115,6 +115,7 @@ public class BusinessNewTaskService extends DataServiceMarker {
             objmodel.setTaskID(taskID);
             objmodel.setHomeBusiness_ID(homebusinessID);
             objmodel.setStatusProcess(EnumProcess.PROCESS.toString());
+            objmodel.setDateSubmit(Long.toString(System.currentTimeMillis()));
             EndBusiness objEnd = endBusinessBo.addEndBusiness(objmodel);
 
             String endBusinessID = objEnd.getUuid();
@@ -143,6 +144,7 @@ public class BusinessNewTaskService extends DataServiceMarker {
             objmodel.setTaskID(taskID);
             objmodel.setHomeBusiness_ID(homebusinessID);
             objmodel.setStatusProcess(EnumProcess.PROCESS.toString());
+            objmodel.setDateSubmit(Long.toString(System.currentTimeMillis()));
             PauseBusiness objpause = pauseBusinessBo.addPauseBusiness(objmodel);
 
             String pauseBusinessID = objpause.getUuid();

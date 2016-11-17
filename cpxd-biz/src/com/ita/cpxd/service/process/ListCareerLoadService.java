@@ -31,6 +31,7 @@ import com.inet.xportal.xdb.query.impl.QueryImpl;
 import com.ita.cpxd.bo.ListCareerBo;
 import com.ita.cpxd.enums.EnumStatus;
 import com.ita.cpxd.model.ListCareer;
+import com.ita.cpxd.model.ListContributor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,10 +47,10 @@ import java.util.Map;
  *
  * @since 1.0
  */
-@Named("cpxd_listcareer_loadservice")
+@Named("ita_listcareer_loadservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
 
-@XPortalPageRequest(uri = "cpxd/listcareer/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/listcareer/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class ListCareerLoadService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(ListCareerLoadService.class);

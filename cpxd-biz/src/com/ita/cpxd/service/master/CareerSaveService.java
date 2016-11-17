@@ -19,9 +19,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_career_saveservice")
+@Named("ita_career_saveservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/career/save", model = "Career", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/career/save", model = "com.ita.cpxd.model.Career", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class CareerSaveService extends DataServiceMarker {
     @Inject
     private CareerBo careerBo;

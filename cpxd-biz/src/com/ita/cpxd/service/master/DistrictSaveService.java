@@ -40,9 +40,9 @@ import com.ita.cpxd.model.District;
  *
  * @since 1.0
  */
-@Named("cpxd_district_saveservice")
+@Named("ita_district_saveservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/district/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/district/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class DistrictSaveService extends DataServiceMarker {
     @Inject
     private DistrictBo districtBo;

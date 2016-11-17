@@ -6,7 +6,7 @@ import com.inet.xportal.web.annotation.XPortalModel;
 /**
  * Created by HS on 13/09/2016.
  */
-@XPortalModel(name = "ita-cpxd-areabusiness", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalModel(name = "ita-areabusiness", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class AreaBusiness {
     private String uuid;
     private String area;

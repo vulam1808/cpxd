@@ -10,7 +10,9 @@ import com.inet.xportal.web.interfaces.ObjectWebDataservice;
 import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
 import com.ita.cpxd.bo.HomeBusinessBo;
+import com.ita.cpxd.bo.PersonRepresentBo;
 import com.ita.cpxd.model.HomeBusiness;
+import com.ita.cpxd.model.PersonRepresent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,9 +24,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_homebusiness_updateservice")
+@Named("ita_homebusiness_updateservice")
 @XPortalDataService(roles = {"cpxd.create"}, description = "Tạo hồ sơ")
-@XPortalPageRequest(uri = "cpxd/homebusiness/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/homebusiness/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class HomeBusinessUpdateService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(EnumStatusLoadService.class);
     @Inject

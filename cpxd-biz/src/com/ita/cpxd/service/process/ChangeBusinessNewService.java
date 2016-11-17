@@ -10,7 +10,11 @@ import com.inet.xportal.web.interfaces.ObjectWebDataservice;
 import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
 import com.ita.cpxd.bo.ChangeBusinessBo;
+import com.ita.cpxd.bo.HomeBusinessBo;
+import com.ita.cpxd.bo.PersonRepresentBo;
 import com.ita.cpxd.model.ChangeBusiness;
+import com.ita.cpxd.model.HomeBusiness;
+import com.ita.cpxd.model.PersonRepresent;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -22,9 +26,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_changebusiness_saveservice")
+@Named("ita_changebusiness_saveservice")
 @XPortalDataService(roles = {"cpxd.create"}, description = "Tạo hồ sơ")
-@XPortalPageRequest(uri = "cpxd/changebusiness/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/changebusiness/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class ChangeBusinessNewService extends DataServiceMarker {
     @Inject
     private ChangeBusinessBo changeBusinessBo;

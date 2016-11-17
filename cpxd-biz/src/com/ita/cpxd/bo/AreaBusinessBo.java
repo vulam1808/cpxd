@@ -11,7 +11,7 @@ import javax.inject.Named;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_AreaBusinessBo")
+@Named("cpxdAreaBusinessBo")
 public class AreaBusinessBo extends MagicContentBO<AreaBusiness> {
     /**
      * Create {@link AccountBo} instance
@@ -19,7 +19,7 @@ public class AreaBusinessBo extends MagicContentBO<AreaBusiness> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected AreaBusinessBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected AreaBusinessBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "areabusiness");
     }
 

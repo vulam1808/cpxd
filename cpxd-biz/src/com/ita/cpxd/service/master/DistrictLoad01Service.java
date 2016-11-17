@@ -23,9 +23,9 @@ import java.util.Map;
  * Created by ACER on 9/8/2016.
  */
 
-@Named("cpxd_district01_loadservice")
+@Named("ita_district01_loadservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Load Services")
-@XPortalPageRequest(uri = "cpkd/district01/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "cpxd/district01/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class DistrictLoad01Service extends DistrictLoadService {
 
     @Inject

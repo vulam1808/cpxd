@@ -40,9 +40,9 @@ import com.inet.xportal.web.interfaces.WebDataService;
  *
  * @since 1.0
  */
-@Named("cpxd_district_deleteservice")
+@Named("ita_district_deleteservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/district/delete",result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/district/delete",result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class DistrictDeleteService extends DataServiceMarker {
     @Inject
     private DistrictBo districtBo;

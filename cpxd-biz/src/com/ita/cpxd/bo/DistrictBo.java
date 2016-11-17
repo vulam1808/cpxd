@@ -11,7 +11,7 @@ import javax.inject.Named;
 /**
  * Created by ACER on 9/7/2016.
  */
-@Named("cpxd_DistrictBo")
+@Named("cpxdDistrictBo")
 public class DistrictBo extends MagicContentBO<District> {
 
     /**
@@ -20,7 +20,7 @@ public class DistrictBo extends MagicContentBO<District> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected DistrictBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected DistrictBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "district");
     }
 

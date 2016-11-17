@@ -41,9 +41,9 @@ import com.ita.cpxd.model.Province;
  *
  * @since 1.0
  */
-@Named("cpxd_province_updateservice")
+@Named("ita_province_updateservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/province/update",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/province/update",  result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class ProvinceUpdateService extends DataServiceMarker {
     @Inject
     private ProvinceBo provinceBo;

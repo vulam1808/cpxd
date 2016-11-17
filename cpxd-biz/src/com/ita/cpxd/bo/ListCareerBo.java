@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_ListCareerBo")
+@Named("cpxdListCareerBo")
 public class ListCareerBo extends MagicContentBO<ListCareer> {
     /**
      * Create {@link AccountBo} instance
@@ -25,7 +25,7 @@ public class ListCareerBo extends MagicContentBO<ListCareer> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected ListCareerBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected ListCareerBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "listcareer");
     }
     public List<ListCareer> loadListCareerByHomeBusinessID(String homeBusinessID) throws WebOSBOException

@@ -25,10 +25,10 @@ import com.ita.cpxd.bo.AreaBusinessBo;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_areabusiness_deleteservice")
+@Named("ita_areabusiness_deleteservice")
 
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/areabusiness/delete", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/areabusiness/delete", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class AreaBusinessDeleteService extends DataServiceMarker {
     @Inject

@@ -13,36 +13,22 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  *****************************************************************/
-package com.ita.cpxd.bf;
+package com.ita.cpxd.provider;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-
-import com.inet.xportal.nosql.web.bf.MagicContentBF;
-import com.inet.xportal.nosql.web.provider.NoSQLConfigProvider;
+import com.inet.xportal.nosql.web.provider.NoSQLDeployProvider;
+import com.inet.xportal.web.annotation.XPortalBigData;
 import com.inet.xportal.web.context.ApplicationContext;
-import com.inet.xportal.web.context.ContentContext;
 
 /**
- * cpxdBf.
+ * itaNoSqlProvider.
  *
  * @author Duyen Tang
- * @version $Id: cpxdBf.java 2015-04-20 14:18:24z tttduyen $
+ * @version $Id: itaNoSqlProvider.java 2015-04-20 10:41:17z tttduyen $
  *
  * @since 1.0
  */
-@Named("cpxd-bf")
-@ContentContext(context = "cpxdNoSqlContext")
-public class cpxdBf extends MagicContentBF {
-
-  /**
-   * Create {@link cpxdBf} instance
-   * 
-   * @param provider the given {@link NoSQLConfigProvider}
-   */
-  @Inject
-  protected cpxdBf(@ApplicationContext(context = "cpxdNoSqlProvider") NoSQLConfigProvider provider) {
-    super(provider);
-  }
+@ApplicationContext(context = "itaNoSqlProvider")
+@XPortalBigData(context = "cpxd")
+public class itaNoSqlProvider extends NoSQLDeployProvider {
 
 }

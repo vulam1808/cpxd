@@ -42,9 +42,9 @@ import com.ita.cpxd.model.Ward;
  *
  * @since 1.0
  */
-@Named("cpxd_ward_saveservice")
+@Named("ita_ward_saveservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/ward/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/ward/save", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class WardSaveService extends DataServiceMarker {
     @Inject
     private WardBo wardBo;

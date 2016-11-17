@@ -43,9 +43,9 @@ import com.ita.cpxd.model.Ward;
  *
  * @since 1.0
  */
-@Named("cpxd_ward_loadservice")
+@Named("ita_ward_loadservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/ward/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/ward/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class WardLoadService extends DataServiceMarker {
     @Inject
     private WardBo wardeBo;

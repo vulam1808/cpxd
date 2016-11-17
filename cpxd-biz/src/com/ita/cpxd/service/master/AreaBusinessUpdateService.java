@@ -24,9 +24,9 @@ import com.ita.cpxd.model.AreaBusiness;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_areabusiness_updateservice")
+@Named("ita_areabusiness_updateservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
-@XPortalPageRequest(uri = "cpxd/areabusiness/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/areabusiness/update", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class AreaBusinessUpdateService extends DataServiceMarker{
 
     @Inject

@@ -1,5 +1,6 @@
 package com.ita.cpxd.service.process;
 
+import com.inet.xportal.nosql.web.data.SearchDTO;
 import com.inet.xportal.web.WebConstant;
 import com.inet.xportal.web.action.AbstractBaseAction;
 import com.inet.xportal.web.annotation.XPortalDataService;
@@ -9,11 +10,14 @@ import com.inet.xportal.web.interfaces.DataServiceMarker;
 import com.inet.xportal.web.interfaces.ObjectWebDataservice;
 import com.inet.xportal.web.interfaces.WebDataService;
 import com.inet.xportal.web.util.XParamUtils;
+import com.inet.xportal.xdb.persistence.JSONDB;
+import com.inet.xportal.xdb.query.Query;
+import com.inet.xportal.xdb.query.impl.QueryImpl;
 import com.ita.cpxd.bo.BusinessDetailBo;
 import com.ita.cpxd.bo.ChangeBusinessBo;
+import com.ita.cpxd.bo.HomeBusinessBo;
+import com.ita.cpxd.bo.PersonRepresentBo;
 import com.ita.cpxd.model.*;
-import com.ita.cpxd.model.BusinessDetail;
-import com.ita.cpxd.model.ChangeBusiness;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,9 +29,9 @@ import java.util.Map;
 /**
  * Created by HS on 13/09/2016.
  */
-@Named("cpxd_business_changenamebusiness")
+@Named("ita_business_changenamebusiness")
 @XPortalDataService(roles = {"cpxd.process"}, description = "Tạo hồ sơ")
-@XPortalPageRequest(uri = "cpxd/homebusiness/changenamebusiness", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/homebusiness/changenamebusiness", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 public class BusinessChangeNameService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(BusinessChangeNameService.class);
     @Inject

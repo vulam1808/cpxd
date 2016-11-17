@@ -8,13 +8,15 @@ import com.inet.xportal.nosql.web.bf.MagicContentBF;
 import com.inet.xportal.nosql.web.bo.MagicContentBO;
 import com.inet.xportal.web.context.ContentContext;
 import com.inet.xportal.web.exception.WebOSBOException;
+import com.ita.cpxd.model.ChangeBusiness;
+import com.ita.cpxd.model.EndBusiness;
 import com.ita.cpxd.model.PauseBusiness;
 
 
 /**
  * Created by LamLe on 9/7/2016.
  */
-@Named("cpxd_PauseBusinessBo")
+@Named("cpxdPauseBusinessBo")
 public class PauseBusinessBo extends MagicContentBO<PauseBusiness> {
 
     /**
@@ -23,7 +25,7 @@ public class PauseBusinessBo extends MagicContentBO<PauseBusiness> {
      * @param contentBf the given {@link MagicContentBF}
      */
     @Inject
-    protected PauseBusinessBo(@ContentContext(context = "cpxdNoSqlContext") MagicContentBF contentBf) {
+    protected PauseBusinessBo(@ContentContext(context = "itaNoSqlContext") MagicContentBF contentBf) {
         super(contentBf, "pauseBusiness");
     }
     public PauseBusiness addPauseBusiness(PauseBusiness objPauseBusiness) throws WebOSBOException

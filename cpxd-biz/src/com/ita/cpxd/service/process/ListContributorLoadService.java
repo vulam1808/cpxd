@@ -28,9 +28,12 @@ import com.inet.xportal.web.util.XParamUtils;
 import com.inet.xportal.xdb.persistence.JSONDB;
 import com.inet.xportal.xdb.query.Query;
 import com.inet.xportal.xdb.query.impl.QueryImpl;
+import com.ita.cpxd.bo.HomeBusinessBo;
 import com.ita.cpxd.bo.ListContributorBo;
 import com.ita.cpxd.enums.EnumStatus;
+import com.ita.cpxd.model.HomeBusiness;
 import com.ita.cpxd.model.ListContributor;
+import com.ita.cpxd.model.PersonRepresent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,10 +49,10 @@ import java.util.Map;
  *
  * @since 1.0
  */
-@Named("cpxd_listcontributor_loadservice")
+@Named("ita_listcontributor_loadservice")
 @XPortalDataService(roles = {"cpxd.master"}, description = "Danh Mục")
 
-@XPortalPageRequest(uri = "cpxd/listcontributor/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
+@XPortalPageRequest(uri = "ita/listcontributor/load", result = WebConstant.ACTION_XSTREAM_JSON_RESULT)
 
 public class ListContributorLoadService extends DataServiceMarker {
     protected static final Logger logger = LoggerFactory.getLogger(ListContributorLoadService.class);
